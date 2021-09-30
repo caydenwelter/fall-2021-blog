@@ -1,0 +1,140 @@
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li{
+    float:inherit;
+}
+
+.navbar a{
+    display:block;
+}
+
+.navbar li a{
+    width: 100px;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    color:white;
+}
+
+.navbar li a:hover{
+    background-color: #111;
+}
+
+.header h1{
+    padding: 18px;
+    margin: 0;
+    text-align: center;
+    background-color: #333;
+    color:white;
+}
+
+.footer ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.footer li{
+    float:right;
+}
+
+.footer a{
+    display: block;
+}
+
+.footer li a{
+    width: 100px;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    color:white;
+}
+
+body{
+    background-color: #949494;
+}
+
+.break1 br{
+    line-height: 50%;
+}
+
+.post1{
+    position: absolute;
+    width: 31%;
+    height: 30%;
+    text-align: center;
+    background-color: #bfbfbf;
+    border: solid;
+    border-style: double;
+    border-width: 5px;
+}
+
+.post2{
+    position: absolute;
+    width: 31%;
+    height: 30%;
+    text-align: center;
+    background-color: #bfbfbf;
+    border: solid;
+    border-style: double;
+    border-width: 5px;
+    left: 34.5%
+}
+
+.post3{
+    position: absolute;
+    width: 31%;
+    height: 30%;
+    text-align: center;
+    background-color: #bfbfbf;
+    border: solid;
+    border-style: double;
+    border-width: 5px;
+    left: 68%
+}
+
+.post4{
+    position: absolute;
+    width: 31%;
+    height: 30%;
+    text-align: center;
+    background-color: #bfbfbf;
+    border: solid;
+    border-style: double;
+    border-width: 5px;
+    top: 54%;
+}
+
+.post5{
+    position: absolute;
+    width: 31%;
+    height: 30%;
+    text-align: center;
+    background-color: #bfbfbf;
+    border: solid;
+    border-style: double;
+    border-width: 5px;
+    left: 34.5%;
+    top: 54%;
+}
+
+.post6{
+    position: absolute;
+    width: 31%;
+    height: 30%;
+    text-align: center;
+    background-color: #bfbfbf;
+    border: solid;
+    border-style: double;
+    border-width: 5px;
+    left: 68%;
+    top: 54%;
+}
