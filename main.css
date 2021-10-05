@@ -58,6 +58,10 @@
     color:white;
 }
 
+.footer li a:hover{
+    background-color: #111;
+}
+
 body{
     background-color: #949494;
 }
@@ -66,75 +70,32 @@ body{
     line-height: 50%;
 }
 
-.post1{
-    position: absolute;
+.previews ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.previews li{
+    display: inline-block;
     width: 31%;
     height: 30%;
-    text-align: center;
     background-color: #bfbfbf;
     border: solid;
     border-style: double;
     border-width: 5px;
 }
 
-.post2{
-    position: absolute;
-    width: 31%;
-    height: 30%;
-    text-align: center;
-    background-color: #bfbfbf;
-    border: solid;
-    border-style: double;
-    border-width: 5px;
-    left: 34.5%
+.previews li.bottom{
+    margin-bottom: 1%;
 }
 
-.post3{
-    position: absolute;
-    width: 31%;
-    height: 30%;
-    text-align: center;
-    background-color: #bfbfbf;
-    border: solid;
-    border-style: double;
-    border-width: 5px;
-    left: 68%
+.previews li.notright{
+    margin-right: 1%;
 }
 
-.post4{
-    position: absolute;
-    width: 31%;
-    height: 30%;
-    text-align: center;
-    background-color: #bfbfbf;
-    border: solid;
-    border-style: double;
-    border-width: 5px;
-    top: 54%;
-}
-
-.post5{
-    position: absolute;
-    width: 31%;
-    height: 30%;
-    text-align: center;
-    background-color: #bfbfbf;
-    border: solid;
-    border-style: double;
-    border-width: 5px;
-    left: 34.5%;
-    top: 54%;
-}
-
-.post6{
-    position: absolute;
-    width: 31%;
-    height: 30%;
-    text-align: center;
-    background-color: #bfbfbf;
-    border: solid;
-    border-style: double;
-    border-width: 5px;
-    left: 68%;
-    top: 54%;
+.previews li#notright{
+    margin-right: 1%;
 }
