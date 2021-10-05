@@ -1,0 +1,101 @@
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li{
+    float:inherit;
+}
+
+.navbar a{
+    display:block;
+}
+
+.navbar li a{
+    width: 100px;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    color:white;
+}
+
+.navbar li a:hover{
+    background-color: #111;
+}
+
+.header h1{
+    padding: 18px;
+    margin: 0;
+    text-align: center;
+    background-color: #333;
+    color:white;
+}
+
+.footer ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.footer li{
+    float:right;
+}
+
+.footer a{
+    display: block;
+}
+
+.footer li a{
+    width: 100px;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    color:white;
+}
+
+.footer li a:hover{
+    background-color: #111;
+}
+
+body{
+    background-color: #949494;
+}
+
+.break1 br{
+    line-height: 50%;
+}
+
+.previews ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.previews li{
+    display: inline-block;
+    width: 31%;
+    height: 30%;
+    background-color: #bfbfbf;
+    border: solid;
+    border-style: double;
+    border-width: 5px;
+}
+
+.previews li.bottom{
+    margin-bottom: 1%;
+}
+
+.previews li.notright{
+    margin-right: 1%;
+}
+
+.previews li#notright{
+    margin-right: 1%;
+}
