@@ -76,6 +76,7 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
+   
 }
 
 .previews li{
@@ -86,6 +87,7 @@ body{
     border: solid;
     border-style: double;
     border-width: 5px;
+    
 }
 
 .previews li.bottom{
@@ -99,3 +101,4 @@ body{
 .previews li#notright{
     margin-right: 1%;
 }
+
