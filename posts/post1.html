@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title id="title">this is the title</title>
+        <title>Post #1 - Fall 2021 Honors Project Blog</title>
         <style>
             h1{
                 text-align: center;
@@ -42,15 +42,28 @@
             .break1 br{
                 line-height: 50%;
             }
-            .title{
+            .title p{
                 text-align: center;
-                font-size: 25px
+                font-size: 30px;
+                padding: 15px;
+                margin: 0px;
             }
             .invisible{
                 visibility: hidden;
             }
-            .content{
-                
+            .date{
+                text-align: center;
+                margin: 0px;
+                padding-top: 0px;
+                padding-bottom: 6px;
+            }
+            .charts{
+                width: 20%;
+                float: left;
+                padding-right: 10px;
+            }
+            .content p{
+                text-align: justify;
             }
         </style>
     </head>
@@ -64,11 +77,16 @@
             </ul>
         </div>
         <div class="title" id="title">
-            <p>The Current Crypto Market & Shiba Inu Coin</p>
+            <p>The Current Crypto Market</p>
         </div>
+        <div class="date">10/25/2021 | Author: Cayden Welter</div>
         <div class="content">
-            Almost everyone has heard of Bitcoin before.
+            <div class="charts"><script src="https://widgets.coingecko.com/coingecko-coin-ticker-widget.js"></script>
+            <coingecko-coin-ticker-widget  coin-id="bitcoin" currency="usd" locale="en" background-color="#949494"></coingecko-coin-ticker-widget><br>
+            <coingecko-coin-ticker-widget  coin-id="ethereum" currency="usd" locale="en" background-color="#949494"></coingecko-coin-ticker-widget></div>
+            <p>Almost everyone has heard of Bitcoin before. Bitcoin is a cryptocurrency, which is a digitally traded token. It holds value, and the value of it is determined by the people who buy and sell it. Bitcoin has been everywhere in the news since it first blew up back in 2017, and has continuously been hitting new all-time-highs (ATH's) since. Bitcoin is widely considered to be the "number 1" crytpocurrency, and <i>generally</i>, most other cryptocurrencies have at least some kind of correlation to Bitcoin's price. At the time of writing, Bitcoin recently hit $67k, and looks to be heading back up to re-test a new ATH. <a href="https://www.ethereum.org" target="_blank">Ethereum</a>, another cryptocurrency, is widely regarded as the "number 2" cryptocurrency. (At the time of writing, Bitcoin and Ethereum also have the respective #1 and #2 market caps, also.) Ethereum is a little more appealing to me personally, and I would be more willing to buy Ethereum than Bitcoin, but this is of course just my opinion. I believe this due to the extensive community behind Ethereum, and I think that in 20 years, Ethereum might be a widely-accepted payment method, while I have a harder time seeing Bitcoin as being widely accepted.</p>
+            
         </div>
-        <div class="invisible">A discussion of the current crypto market and what I think about Bitcoin, Etherium, and Shiba Inu Coin.</div> <!-- this is the description of the post, must be at bottom>
+        <div class="invisible">A discussion of the current crypto market and what I think about a few coins.</div> <!-- this is the description of the post, must be at bottom>
     </body>
 </html>
