@@ -1,17 +1,18 @@
 function preLoad(){
-   this.window.setTimeout(function(){
-       var c = this.document.getElementById("cover");
-       var loader = this.document.getElementById("loader");
+    var c = this.document.getElementById("cover");
+    var loader = this.document.getElementById("loader");
+    this.window.setTimeout(function(){
        var op = 1.0;
        setInterval(function(){
            op-= 0.1;
            c.style.opacity = op.toString();
            loader.style.opacity = op.toString();
        }, 10);
-       c.style.visibility = "hidden";
-       loader.style.visibility = "hidden";
+        this.window.setTimeout(function(){
+            loader.style.visibility = "hidden";
+            c.style.visibility = "hidden";
+        }, 100);
    }, 1000);
-    
 }
 
 function setUpLoader(){
