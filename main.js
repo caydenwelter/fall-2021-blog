@@ -2,13 +2,12 @@ function preLoad(){
    this.window.setTimeout(function(){
        var c = this.document.getElementById("cover");
        var loader = this.document.getElementById("loader");
-       var op;
-       for(op = 1.0; op > 0.0; op -= 0.1){
-          window.setTimeout(function(){
-              c.style.opacity = op.toString();
-              loader.style.opacity = op.toString();
-          }, 100)
-       }
+       var op = 1.0;
+       setInterval(function(){
+           op-= 0.1;
+           c.style.opacity = op.toString();
+           loader.style.opacity = op.toString();
+       }, 10);
    }, 1000);
     
 }
