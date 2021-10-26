@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Post #1 - Fall 2021 Honors Project Blog</title>
+        <style>
+            h1{
+                text-align: center;
+                padding: 18px;
+                background-color: #333;
+                color:white;
+                margin:0;
+            }
+            body{
+                background-color: 949494
+            }
+            .navbar ul{
+                list-style-type: none;
+                overflow: hidden;
+                background-color: #333;
+                padding: 0;
+                margin: 0;
+            }
+
+            .navbar li{
+                float:inherit;
+            }
+
+            .navbar a{
+                display:block;
+            }   
+
+            .navbar li a{
+                width: 100px;
+                text-decoration: none;
+                padding: 14px 16px;
+                text-align: center;
+                color:white;
+            }
+
+            .navbar li a:hover{
+                background-color: #111;
+            }
+            .break1 br{
+                line-height: 50%;
+            }
+            .title p{
+                text-align: center;
+                font-size: 30px;
+                padding: 15px;
+                margin: 0px;
+            }
+            .invisible{
+                visibility: hidden;
+            }
+            .date{
+                text-align: center;
+                margin: 0px;
+                padding-top: 0px;
+                padding-bottom: 6px;
+            }
+            .charts{
+                width: 20%;
+                float: left;
+                padding-right: 10px;
+            }
+            .content p{
+                text-align: justify;
+            }
+            #popup1 a span{ /* attributes here and in the hover part must be the same, or else animations get funky-looking (except for transition and opacity) */
+                visibility: hidden;
+                display: block;
+                opacity: 0;
+                transition: .4s ease-in-out;
+                position: absolute;
+                width:400px;
+                height:80px;
+                font-size: 13px;
+                border: 2px solid white;
+                padding: 10px;
+            }
+            #popup1 a:hover span{
+                display: block;
+                position: absolute;
+                width: 400px;
+                height: 80px;
+                color: white;
+                font-size: 13px;
+                background: black;
+                visibility: visible;
+                opacity: 1;
+                border: 2px solid white;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Fall 2021 Honors Project Blog</h1>
+        <div class="break1"><br></div>
+        <div class="navbar">
+            <ul>
+                <li><a href="/index.html" style="float:left">Home</a></li>
+                <li><a href="/about.html" style="float:left">About</a></li>
+            </ul>
+        </div>
+        <div class="title" id="title">
+            <p>The Current Crypto Market</p>
+        </div>
+        <div class="date">10/24/2021 | Author: Cayden Welter</div>
+        <div class="content">
+            <div class="charts"><script src="https://widgets.coingecko.com/coingecko-coin-ticker-widget.js"></script>
+            <coingecko-coin-ticker-widget  coin-id="bitcoin" currency="usd" locale="en" background-color="#949494"></coingecko-coin-ticker-widget><br>
+            <coingecko-coin-ticker-widget  coin-id="ethereum" currency="usd" locale="en" background-color="#949494"></coingecko-coin-ticker-widget></div>
+            <p>Almost everyone has heard of Bitcoin before. Bitcoin is a cryptocurrency, which is a digitally traded token. It holds value, and the value of it is determined by the people who buy and sell it. Bitcoin has been everywhere in the news since it first blew up back in 2017, and has continuously been hitting new all-time-highs (ATH's) since. Bitcoin is widely considered to be the "number 1" crytpocurrency, and <i>generally</i>, most other cryptocurrencies have at least some kind of correlation to Bitcoin's price. At the time of writing, Bitcoin recently hit $67k, and looks to be heading back up to re-test a new ATH. <a href="https://www.ethereum.org" target="_blank">Ethereum</a>, another cryptocurrency, is widely regarded as the "number 2" cryptocurrency. (At the time of writing, Bitcoin and Ethereum also have the respective #1 and #2 market caps, also.) Ethereum is a little more appealing to me personally, and I would be more willing to buy Ethereum than Bitcoin, but this is of course just my opinion. I believe this due to the extensive community behind Ethereum, and I think that in 20 years, Ethereum might be a widely-accepted payment method, while I have a harder time seeing Bitcoin as being widely accepted. (The current prices of both of these coins can be seen on the left hand side of this post, and they will update everytime you refresh thanks to CoinGecko.) <br><br> I also think that various other coins, commonly known as "altcoins", are worth bringing up here. These coins usually have much smaller market caps than Bitcoin or Ethereum, and sometimes run on their own software (other times altcoins will run on an existing piece of cryptocurrency software, most commonly Ethereum's). A few big altcoins include Stellar Lumens, Dogecoin, and Cosmos. These smaller-cap cryptocurrencies can <i>sometimes</i> be susceptible to <span id="popup1"><a href="https://en.wikipedia.org/wiki/Pump_and_dump" target="_blank" id="parent1" onmouseover="setPos('parent1', 'link1')">pump-and-dumps<span id="link1">According to Wikipedia, a pump and dump is "a form of securities fraud that involves artificially invlating the price of an asset through false and misleading positive statements..." (note that this act is legal for cryptocurrencies, since cryptocurrencies are unregulated in the United States)</span></a></span>, a type of financial scheme. Cryptos with even smaller caps can be even more susceptible.</p>
+            
+        </div>
+        <div class="invisible">A discussion of the current crypto market and what I think about a few coins.</div> <!-- this is the description of the post, must be at bottom-->
+        <script>
+        function setPos(parentlink, link){
+            var target = document.getElementById(link);
+            var parent = document.getElementById(parentlink);
+            var parentRect = parent.getBoundingClientRect();
+            var parentLeft = parentRect.left + parentRect.width + 8;
+            var parentTop = parentRect.top - (parentRect.height)/2;
+            //alert(leftOffset);
+            target.style.left = parentLeft.toString();
+            target.style.top = parentTop.toString();
+        }
+        </script>
+    </body>
+</html>
