@@ -8,6 +8,8 @@ function preLoad(){
            c.style.opacity = op.toString();
            loader.style.opacity = op.toString();
        }, 10);
+       c.style.visibility = "hidden";
+       loader.style.visibility = "hidden";
    }, 1000);
     
 }
