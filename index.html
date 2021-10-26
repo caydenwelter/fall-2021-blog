@@ -5,7 +5,10 @@
     <script type = "text/javascript" src="main.js"></script>
   </head>
   
-  <body>
+  <body onload="preLoad(), setUpLoader()">
+    <script type = "text/javascript" src="main.js"></script>
+    <div class="cover" id="cover"></div>
+    <div class="loader" id="loader"></div>
     <div class="header">
         <h1>Fall 2021 Honors Project Blog</h1>
     </div>
@@ -20,7 +23,7 @@
     <br>
     <div class="previews">
     <ul>
-        <li class="bottom" id="notright"><h3><a href="post1.html" id="title1"><iframe src="post1.html" onload="this.before((this.contentDocument.body).children[3]);this.remove();" class="nopadding"></iframe></a></h3><iframe src="post1.html" onload="this.before((this.contentDocument.body).children[6]);this.remove();"></iframe></li>
+        <li class="bottom" id="notright"><h3><a href="post1.html" id="title1"><iframe src="post1.html" onload="this.before((this.contentDocument.body).children[3]);this.remove()" class="nopadding"></iframe></a></h3><iframe src="post1.html" onload="this.before((this.contentDocument.body).children[6]);this.remove()"></iframe></li>
         <li class="bottom" id="notright"><h3><a href="#">Title 2</a></h3>This is a preview of the 2nd most recent blog post.</li>
         <li class="bottom"><h3><a href="#">Title 3</a></h3>This is a preview of the 3rd most recent blog post.</li>
         <li class="notright"><h3><a href="#">Title 4</a></h3>This is a preview of the 4th most recent blog post.</li>
