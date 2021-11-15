@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Post #3 - Fall 2021 Honors Project Blog</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Oxygen&display=swap" rel="stylesheet">
+        <style>
+            h1{
+                text-align: center;
+                padding: 18px;
+                background-color: #333;
+                color:white;
+                margin:0;
+                font-family: 'Nanum Gothic', sans-serif; 
+            }
+            body{
+                background-color: #949494;
+            }
+            .navbar ul{
+                list-style-type: none;
+                overflow: hidden;
+                background-color: #333;
+                padding: 0;
+                margin: 0;
+                font-family: 'Nanum Gothic', sans-serif; 
+            }
+
+            .navbar li{
+                float:inherit;
+            }
+
+            .navbar a{
+                display:block;
+            }   
+
+            .navbar li a{
+                width: 100px;
+                text-decoration: none;
+                padding: 14px 16px;
+                text-align: center;
+                color:white;
+            }
+
+            .navbar li a:hover{
+                background-color: #111;
+            }
+            .break1 br{
+                line-height: 50%;
+            }
+            .title p{
+                text-align: center;
+                font-size: 30px;
+                padding: 15px;
+                margin: 0px;
+                font-family: 'Nanum Gothic', sans-serif; 
+            }
+            .invisible{
+                visibility: hidden;
+            }
+            .date{
+                text-align: center;
+                margin: 0px;
+                padding-top: 0px;
+                padding-bottom: 6px;
+                font-family: 'Nanum Gothic', sans-serif; 
+            }
+            .content p{
+                font-family: 'Oxygen', sans-serif;
+                line-height: 2.0;
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+            
+            
+        </style>
+    </head>
+    <body onload="">
+        <h1>Fall 2021 Honors Project Blog</h1>
+        <div class="break1"><br></div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html" style="float:left">Home</a></li>
+                <li><a href="about.html" style="float:left">About</a></li>
+            </ul>
+        </div>
+        <div class="title" id="title">
+            <p>How This Blog Works</p>
+        </div>
+        <div class="date">11/07/2021 | Author: Cayden Welter</div>
+        <div class="content">
+            <p>
+                Overall, I have had a really good time bringing this project to life and I have picked up a lot of new skills along the way. This website is comprised of 3 different languages - HTML, CSS, and JavaScript (JS). When I started this project, I knew a good amount about HTML a little bit of CSS, and zero JS; at the time of writing, I have been able to improve my knowledge on all 3 of these languages. <br><br> One of the first things that I knew I would need and was able to bring to life is the navigation bar that you can see at the top of each post and the top of the home page. I had made navigation bars prior to this project, but since it had been a little while, I researched on how to make them. I used a method that <a href="https://www.w3schools.com/">W3 Schools</a> uses in one of their tutorials. (Side note: W3 Schools was one of my best assets during this project. Whenever I needed to reference something, that's where I primarily went) The navigation bar wasn't that bad to make and I was able to style it to my liking and even included a 2nd one on the bottom of the home page. The next major hurdle for me was designing the home page, and more specifically, getting the home page to <i>automatically</i> take the title from each post and put the title into each "preview". This was accomplished by using an &lt;iframe&gt; tag, which provides a way for a webpage to read and display content from another webpage, which in this case is the 6 posts shown on the home page. Next, I coded the &lt;iframe&gt; to only display a certain element, in this case the title, and then to finally remove itself and only show the text. It is kind of a weird implementation but I'm pretty happy with it! There was one small problem with using the &lt;iframe&gt;s however, and that was that they are not instant; upon loading the homepage, you could see a frame or two of the &lt;iframe&gt;s before they removed themselves, and I thought that this looked bad. This prompted me to create something that at the time was really out of my comfort zone: a loading screen.<br><br>The loading screen that you see upon loading or refreshing the home page looks simple enough, but was actually quite complex. It was especially difficult for me because I made it using some JavaScript (JS), which I have never worked with prior to this project. The first step to making the loader is the spinning circle, which was mostly CSS and then some JS to position it in the center of your monitor, taking into account the width and height of the circle. The next step, and only other step, was to make the loading circle "fade" out, which proved to be more difficult than I first thought. Essentially, the JS takes the loader, waits 1 second, then begins decreasing the opacity of the loader by 10% every 10 milliseconds, eventually making the loader completely invisible. This was more difficult to code and to make it work consistently than I first thought, and I actually had to make a post on StackOverflow in order to figure out why it wasn't working how I wanted to. <br><br> The next thing that I needed to make the code for was the "pop-ups" that happen when you hover over most hyperlinks in this blog. I actually have 2 different implementations for this, one of which can be seen in Post #1, and the other can be seen in all the rest of the posts. The one that is in Post #1 was my first iteration of it, and well, it is very bad. It breaks if you re-size your browser window and is very inconsistent. The next implementation that I came up with, heavily showcased in Post #3, is much better. It works regardless of the size of your browser window and was much easier to program. I am very happy with this implementation, as this was the first thing that I feel is very well tuned and is able to be self-adaptable that I created in this blog.
+            </p>
+        </div>
+        <div class="invisible">Some insight on the innerworkings of this website and my journey with learning them! (Specifically CSS and JavaScript)</div> <!-- this is the description of the post, must be at bottom-->
+        <script>
+            
+        </script>
+    </body>
+</html>

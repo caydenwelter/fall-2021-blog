@@ -1,6 +1,9 @@
 <html>
     <head>
         <title>Post #1 - Fall 2021 Honors Project Blog</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Oxygen&display=swap" rel="stylesheet">
         <style>
             h1{
                 text-align: center;
@@ -8,6 +11,7 @@
                 background-color: #333;
                 color:white;
                 margin:0;
+                font-family: 'Nanum Gothic', sans-serif; 
             }
             body{
                 background-color: 949494
@@ -18,6 +22,7 @@
                 background-color: #333;
                 padding: 0;
                 margin: 0;
+                font-family: 'Nanum Gothic', sans-serif; 
             }
 
             .navbar li{
@@ -47,6 +52,7 @@
                 font-size: 30px;
                 padding: 15px;
                 margin: 0px;
+                font-family: 'Nanum Gothic', sans-serif; 
             }
             .invisible{
                 visibility: hidden;
@@ -56,6 +62,7 @@
                 margin: 0px;
                 padding-top: 0px;
                 padding-bottom: 6px;
+                font-family: 'Nanum Gothic', sans-serif; 
             }
             .charts{
                 width: 20%;
@@ -64,6 +71,9 @@
             }
             .content p{
                 text-align: justify;
+                font-family: 'Oxygen', sans-serif;
+                line-height: 2.0;
+                margin-right: 5%;
             }
             #popup1 a span{ /* attributes here and in the hover part must be the same, or else animations get funky-looking (except for transition and opacity) */
                 visibility: hidden;
@@ -72,7 +82,7 @@
                 transition: .4s ease-in-out;
                 position: absolute;
                 width:400px;
-                height:80px;
+                height:130px;
                 font-size: 13px;
                 border: 2px solid white;
                 padding: 10px;
@@ -81,7 +91,7 @@
                 display: block;
                 position: absolute;
                 width: 400px;
-                height: 80px;
+                height: 130px;
                 color: white;
                 font-size: 13px;
                 background: black;
@@ -109,10 +119,10 @@
             <div class="charts"><script src="https://widgets.coingecko.com/coingecko-coin-ticker-widget.js"></script>
             <coingecko-coin-ticker-widget  coin-id="bitcoin" currency="usd" locale="en" background-color="#949494"></coingecko-coin-ticker-widget><br>
             <coingecko-coin-ticker-widget  coin-id="ethereum" currency="usd" locale="en" background-color="#949494"></coingecko-coin-ticker-widget></div>
-            <p>Almost everyone has heard of Bitcoin before. Bitcoin is a cryptocurrency, which is a digitally traded token. It holds value, and the value of it is determined by the people who buy and sell it. Bitcoin has been everywhere in the news since it first blew up back in 2017, and has continuously been hitting new all-time-highs (ATH's) since. Bitcoin is widely considered to be the "number 1" crytpocurrency, and <i>generally</i>, most other cryptocurrencies have at least some kind of correlation to Bitcoin's price. At the time of writing, Bitcoin recently hit $67k, and looks to be heading back up to re-test a new ATH. <a href="https://www.ethereum.org" target="_blank">Ethereum</a>, another cryptocurrency, is widely regarded as the "number 2" cryptocurrency. (At the time of writing, Bitcoin and Ethereum also have the respective #1 and #2 market caps, also.) Ethereum is a little more appealing to me personally, and I would be more willing to buy Ethereum than Bitcoin, but this is of course just my opinion. I believe this due to the extensive community behind Ethereum, and I think that in 20 years, Ethereum might be a widely-accepted payment method, while I have a harder time seeing Bitcoin as being widely accepted. (The current prices of both of these coins can be seen on the left hand side of this post, and they will update everytime you refresh thanks to CoinGecko.) <br><br> I also think that various other coins, commonly known as "altcoins", are worth bringing up here. These coins usually have much smaller market caps than Bitcoin or Ethereum, and sometimes run on their own software (other times altcoins will run on an existing piece of cryptocurrency software, most commonly Ethereum's). A few big altcoins include Stellar Lumens, Dogecoin, and Cosmos. These smaller-cap cryptocurrencies can <i>sometimes</i> be susceptible to <span id="popup1"><a href="https://en.wikipedia.org/wiki/Pump_and_dump" target="_blank" id="parent1" onmouseover="setPos('parent1', 'link1')">pump-and-dumps<span id="link1">According to Wikipedia, a pump and dump is "a form of securities fraud that involves artificially invlating the price of an asset through false and misleading positive statements..." (note that this act is legal for cryptocurrencies, since cryptocurrencies are unregulated in the United States)</span></a></span>, a type of financial scheme. Cryptos with even smaller caps can be even more susceptible.</p>
+            <p>Almost everyone has heard of Bitcoin before. Bitcoin is a cryptocurrency, which is a digitally traded token. It holds value, and the value of it is determined by the people who buy and sell it. Bitcoin has been everywhere in the news since it first blew up back in 2017, and has continuously been hitting new all-time-highs (ATH's) since. Bitcoin is widely considered to be the "number 1" crytpocurrency, and <i>generally</i>, most other cryptocurrencies have at least some kind of correlation to Bitcoin's price. At the time of writing, Bitcoin recently hit $67k, and looks to be heading back up to re-test a new ATH. <a href="https://www.ethereum.org" target="_blank">Ethereum</a>, another cryptocurrency, is widely regarded as the "number 2" cryptocurrency. (At the time of writing, Bitcoin and Ethereum also have the respective #1 and #2 market caps, also.) Ethereum is a little more appealing to me personally, and I would be more willing to buy Ethereum than Bitcoin, but this is of course just my opinion. I believe this due to the extensive community behind Ethereum, and I think that in 20 years, Ethereum might be a widely-accepted payment method, while I have a harder time seeing Bitcoin as being widely accepted. (The current prices of both of these coins can be seen on the left hand side of this post, and they will update everytime you refresh thanks to CoinGecko.) <br><br> I also think that various other coins, commonly known as "altcoins", are worth bringing up here. These coins usually have much smaller market caps than Bitcoin or Ethereum, and sometimes run on their own software (other times altcoins will run on an existing piece of cryptocurrency software, most commonly Ethereum's). A few big altcoins include Stellar Lumens, Dogecoin, and Cosmos. These smaller-cap cryptocurrencies can <i>sometimes</i> be susceptible to <span id="popup1"><a href="https://en.wikipedia.org/wiki/Pump_and_dump" target="_blank" id="parent1" onmouseover="setPos('parent1', 'link1')">pump-and-dumps<span id="link1">According to Wikipedia, a pump and dump is "a form of securities fraud that involves artificially invlating the price of an asset through false and misleading positive statements..." (note that this act is legal for cryptocurrencies, since cryptocurrencies are unregulated in the United States)</span></a></span>, a type of financial scheme. Cryptos with even smaller caps can be even more susceptible. Regardless, I think that the crypto market is a very unique space and brings a different kind of investing to the table. Many brokerage platforms, such as Robinhood and Webull, are incorporating the ability to trade cryptocurrencies in combination with traditional stocks, ETF's and options. Many coins will get attention and increase in value simply due to a <i>rumor</i> of it being listed, or able to be traded, on a platform such as Robinhood or Webull. An example of this is Shiba Inu coin, which at the time of writing has ran up hundreds of percents due to a rumor that it might be listed on Robinhood.</p>
             
         </div>
-        <div class="invisible">A discussion of the current crypto market and what I think about a few coins.</div> <!-- this is the description of the post, must be at bottom-->
+        <div class="invisible">A discussion of the current crypto market and my personal thoughts on the it, as well as some thoughts about Bitcoin and Ethereum.</div> <!-- this is the description of the post, must be at bottom-->
         <script>
         function setPos(parentlink, link){
             var target = document.getElementById(link);

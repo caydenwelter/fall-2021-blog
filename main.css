@@ -20,6 +20,7 @@
     padding: 14px 16px;
     text-align: center;
     color:white;
+    font-family: 'Nanum Gothic', sans-serif; 
 }
 
 .navbar li a:hover{
@@ -32,6 +33,7 @@
     text-align: center;
     background-color: #333;
     color:white;
+    font-family: 'Nanum Gothic', sans-serif; 
 }
 
 .footer ul{
@@ -76,18 +78,22 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
-   
 }
 
 .previews li{
     display: inline-block;
+    vertical-align: top;
     width: 31%;
     height: 30%;
     background-color: #bfbfbf;
     border: solid;
     border-style: double;
     border-width: 5px;
-    
+    font-family: 'Oxygen', sans-serif;
+}
+
+.previews li:hover{
+    background-color: #ababab;
 }
 
 .previews li.bottom{

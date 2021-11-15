@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <title>Post #3 - Fall 2021 Honors Project Blog</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Oxygen&display=swap" rel="stylesheet">
+        <style>
+            h1{
+                text-align: center;
+                padding: 18px;
+                background-color: #333;
+                color:white;
+                margin:0;
+                font-family: 'Nanum Gothic', sans-serif; 
+            }
+            body{
+                background-color: #949494;
+            }
+            .navbar ul{
+                list-style-type: none;
+                overflow: hidden;
+                background-color: #333;
+                padding: 0;
+                margin: 0;
+                font-family: 'Nanum Gothic', sans-serif; 
+            }
+
+            .navbar li{
+                float:inherit;
+            }
+
+            .navbar a{
+                display:block;
+            }   
+
+            .navbar li a{
+                width: 100px;
+                text-decoration: none;
+                padding: 14px 16px;
+                text-align: center;
+                color:white;
+            }
+
+            .navbar li a:hover{
+                background-color: #111;
+            }
+            .break1 br{
+                line-height: 50%;
+            }
+            .title p{
+                text-align: center;
+                font-size: 30px;
+                padding: 15px;
+                margin: 0px;
+                font-family: 'Nanum Gothic', sans-serif; 
+            }
+            .invisible{
+                visibility: hidden;
+            }
+            .date{
+                text-align: center;
+                margin: 0px;
+                padding-top: 0px;
+                padding-bottom: 6px;
+                font-family: 'Nanum Gothic', sans-serif; 
+            }
+            .content p{
+                font-family: 'Oxygen', sans-serif;
+                line-height: 2.0;
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+            
+            .container1{
+                position: relative;
+            }
+            
+            .bluechipdesc{
+                position: absolute;
+                font-size: 10px;
+                width: 100%;
+                border: 1px solid white;
+                visibility: hidden;
+                color: white;
+                background-color: black;
+                padding: 3px;
+                transition: .4s ease-in-out;
+                opacity: 0;
+            }
+            .container1:hover .bluechipdesc{
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            .container2{
+                position: relative;
+            }
+            .pennystockdesc{
+                position: absolute;
+                font-size: 10px;
+                width: 100%;
+                border: 1px solid white;
+                visibility: hidden;
+                color: white;
+                background-color: black;
+                padding: 3px;
+                transition: .4s ease-in-out;
+                opacity: 0;
+            }
+            .container2:hover .pennystockdesc{
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            .container3{
+                position: relative;
+            }
+            .optionsdesc{
+                position: absolute;
+                font-size: 10px;
+                width: 100%;
+                border: 1px solid white;
+                visibility: hidden;
+                color: white;
+                background-color: black;
+                padding: 3px;
+                transition: .4s ease-in-out;
+                opacity: 0;
+            }
+            .container3:hover .optionsdesc{
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            .container4{
+                position: relative;
+            }
+            .leapsdesc{
+                position: absolute;
+                font-size: 10px;
+                width: 100%;
+                border: 1px solid white;
+                visibility: hidden;
+                color: white;
+                background-color: black;
+                padding: 3px;
+                transition: .4s ease-in-out;
+                opacity: 0;
+            }
+            .container4:hover .leapsdesc{
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            .container5{
+                position: relative;
+            }
+            .swingdesc{
+                position: absolute;
+                font-size: 10px;
+                width: 100%;
+                border: 1px solid white;
+                visibility: hidden;
+                color:white;
+                background-color: black;
+                padding: 3px;
+                transition: .4s ease-in-out;
+                opacity: 0;
+            }
+            .container5:hover .swingdesc{
+                visibility: visible;
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body onload="sizeHovers()" onmouseout="sizeHovers()">
+        <h1>Fall 2021 Honors Project Blog</h1>
+        <div class="break1"><br></div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html" style="float:left">Home</a></li>
+                <li><a href="about.html" style="float:left">About</a></li>
+            </ul>
+        </div>
+        <div class="title" id="title">
+            <p>The Stock Market and My Experience With It</p>
+        </div>
+        <div class="date">11/01/2021 | Author: Cayden Welter</div>
+        <div class="content">
+            <p>The stock market is something that has really intrigued me for the past 2-3 years, and about a year and a half ago, I got into it. I signed up for a Robinhood account, deposited $100, and began obsessing over it. I would spend hours watching videos on YouTube and trying to learn as much about it as I could, and eventually, I started making some trades. I played around with buying and selling <span class="container1"><a href="https://en.wikipedia.org/wiki/Blue_chip_(stock_market)" target="_blank">bluechip<span class="bluechipdesc" id="bluechipdesc">According to Wikipedia, a bluechip stock is a stock of a company which generally performs well in both good times and bad times.</span></a></span> stocks, usually selling after only a couple of percentage points made. I made a small amount of money off of this, and got bored, and decided to go to <span class="container2"><a href="https://en.wikipedia.org/wiki/Penny_stock" target="_blank">penny stocks<span class="pennystockdesc" id="pennystockdesc">According to wikipedia, a penny stock is a stock which trades at less than $1. These stocks are typically more volatile than other stocks.</span></a></span> instead. I made some money, lost some money, and then lost a <i>lot</i> of money, and decided to give up and take a break from trading. <br> A few months later, I got back into it, and decided to go to a different platform called WeBull. Almost immediately, I deposited more money than I was comfortable with losing, and this came back to bite me. I signed up for <span class="container3"><a href="https://en.wikipedia.org/wiki/Option_(finance)" target="_blank">options<span class="optionsdesc" id="optionsdesc">In everyday language, a stock option is a form of leverage; that is, you can make <i>and</i> lose more money than you otherwise would.</span></a></span> trading, and ended up making some really bad options trades, and losing basically all of my deposit. This didn't financially ruin me or anything, but it was a harsh reality that I learned. I am actually glad that I went through this experience personally, as I learned a lot from it and it motivated me to learn more about how to trade options in a way that <i>doesn't</i> blow up an account. Over a year after this happened,  a lot of rollercoasters of emotions and some rather large fluctuations in my account balance, I have finally broke even and started to make some money out of the market. It took a long time and a lot of studying, but personally I think that it was worth it. I learned a lot and I think that what I've learned in the past year is knowledge that I will carry with me for the rest of my life. I don't plan to stop trading and I think that the skills I've picked up can be applied in many different ways.<br><br>I would like to reflect on what I did in the first couple months of my stock market experience, and more specifically what I did wrong. In my Robinhood account, I chased penny stocks that were moving on some form of catalyst (an event that causes drastic price changes), which is just not a good idea to be doing at all, in my opinion. After this, in my WeBull account, I would buy options that had a very low delta, or chance of success. On top of this, they usually expired within a week or so, making them even more risky. They were cheap, volitile, and had the <i>potential</i> to make a lot of money - but they were more likely to end up being worthless than anything else. They were essentially lottery tickets. Looking back at it, it was very dumb to be buying these, but I am glad that I learned my lesson early on and with an amount of money that didn't financially ruin me.<br><br>Despite me having a rough start, I <i>have</i> had success with the market in the past 6 months or so. I watched many hours of videos on various strategies, and was able to actually do well with them. Most of my success came from <span class="container4"><a href="https://en.wikipedia.org/wiki/LEAPS_(finance)" target="_blank">LEAPS<span id="leapsdesc" class="leapsdesc">In finance, LEAPS are Long-term Equity Anticipation Securities, which are generally used as a form of leverage.</span></a></span>, buying cryptocurrencies on dips and selling them near peak, and making <span class="container5"><a href="https://en.wikipedia.org/wiki/Swing_trading" target="_blank">swing trades<span class="swingdesc" id="swingdesc">Trades that generally last anywhere from a week to a couple months.</span></a></span> on a large variety of companies.</p>
+        </div>
+        <div class="invisible">My personal experience with the stock market and what I think about investing as a whole.</div> <!-- this is the description of the post, must be at bottom-->
+        <script>
+            function sizeHovers(){ //this implementation is *much* better than that in post #1, plus this method works no matter how the window is scaled. great! I am keeping the implementation for the hover popup in post #1 as an example to myself for what can happen when you over-complicate something :)
+                var a = document.getElementById("bluechipdesc");
+                var size = (document.body.clientWidth * 0.08).toString();
+                a.style.width = size;
+                var b = document.getElementById("pennystockdesc");
+                b.style.width = size;
+                var c = document.getElementById("optionsdesc");
+                c.style.width = size;
+                var d = document.getElementById("leapsdesc");
+                d.style.width = size;
+                var e = document.getElementById("swingdesc");
+                e.style.width = size;
+            }
+        </script>
+    </body>
+</html>
