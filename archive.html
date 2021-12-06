@@ -10,14 +10,57 @@
             .heading h1{
                 padding: 18px;
                 margin: 0px;
+                font-family: 'Nanum Gothic', sans-serif; 
             }
             body{
                 background-color: #949494;
+            }
+            ul li a{
+                font-family: 'Nanum Gothic', sans-serif;
+                color: #333;
+            }
+            .navbar ul{
+                list-style-type: none;
+                overflow: hidden;
+                background-color: #333;
+                padding: 0;
+                margin: 0;
+            }
+
+            .navbar li{
+                float:inherit;
+            }
+
+            .navbar a{
+                display:block;
+            }
+
+            .navbar li a{
+                width: 100px;
+                text-decoration: none;
+                padding: 14px 16px;
+                text-align: center;
+                color:white;
+                font-family: 'Nanum Gothic', sans-serif; 
+            }
+
+            .navbar li a:hover{
+                background-color: #111;
+            }
+            .break1 br{
+                line-height: 50%;
             }
         </style>
     </head>
     <body>
         <div class="heading"><h1>Archive of Posts</h1></div>
+        <div class="break1"><br></div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html" style="float:left">Home</a></li>
+                <li><a href="about.html" style="float:left">About</a></li>
+            </ul>
+        </div>
         <ul>
             <li><a href="post1.html">Post 1</a></li>
             <li><a href="post2.html">Post 2</a></li>
@@ -25,10 +68,6 @@
             <li><a href="post4.html">Post 4</a></li>
             <li><a href="post5.html">Post 5</a></li>
             <li><a href="post6.html">Post 6</a></li>
-            <li><a href="post7.html">Post 7</a></li>
-            <li><a href="post8.html">Post 8</a></li>
-            <li><a href="post9.html">Post 9</a></li>
-            <li><a href="post10.html">Post 10</a></li>
         </ul>
     </body>
 </html>
